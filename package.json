@@ -4,6 +4,17 @@
   "bin": {
     "miles-cdk": "bin/miles-cdk.js"
   },
+  "contributors": [
+    {
+      "name": "LibreWorks Contributors",
+      "homepage": "https://github.com/libreworks/miles-cdk/contributors"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/libreworks/miles-cdk/issues"
+  },
+  "homepage": "https://github.com/libreworks/miles-cdk",
   "scripts": {
     "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
     "cdk": "cdk",
