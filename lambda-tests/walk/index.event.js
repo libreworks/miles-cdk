@@ -1,7 +1,7 @@
 module.exports = {
-  "path": "/test/walk",
-  "headers": {
-    "Accept": "application/json",
+  path: "/test/walk",
+  headers: {
+    Accept: "application/json",
     "Accept-Language": "en-US,en;q=0.8",
     "CloudFront-Forwarded-Proto": "https",
     "CloudFront-Is-Desktop-Viewer": "true",
@@ -9,47 +9,47 @@ module.exports = {
     "CloudFront-Is-SmartTV-Viewer": "false",
     "CloudFront-Is-Tablet-Viewer": "false",
     "CloudFront-Viewer-Country": "US",
-    "Host": "foobar.execute-api.us-east-1.amazonaws.com",
+    Host: "foobar.execute-api.us-east-1.amazonaws.com",
     "Upgrade-Insecure-Requests": "1",
     "User-Agent": "Mozilla/5.0",
-    "Via": "1.1 foobar.cloudfront.net (CloudFront)",
+    Via: "1.1 foobar.cloudfront.net (CloudFront)",
     "X-Amz-Cf-Id": "foobar",
     "X-Forwarded-For": "127.0.0.1",
     "X-Forwarded-Port": "443",
-    "X-Forwarded-Proto": "https"
+    "X-Forwarded-Proto": "https",
   },
-  "pathParameters": {
-    "proxy": "hello"
+  pathParameters: {
+    proxy: "hello",
   },
-  "requestContext": {
-    "accountId": "123456789012",
-    "resourceId": "us4z18",
-    "stage": "test",
-    "requestId": "41b45ea3-70b5-11e6-b7bd-69b5aaebc7d9",
-    "identity": {
-      "cognitoIdentityPoolId": "",
-      "accountId": "",
-      "cognitoIdentityId": "",
-      "caller": "",
-      "apiKey": "",
-      "sourceIp": "192.168.100.1",
-      "cognitoAuthenticationType": "",
-      "cognitoAuthenticationProvider": "",
-      "userArn": "",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36 OPR/39.0.2256.48",
-      "user": ""
+  requestContext: {
+    accountId: "f-oobar",
+    resourceId: "fooba-r",
+    stage: "test",
+    requestId: "5a2186ea-9a36-11eb-b982-671cc1ab0788",
+    identity: {
+      cognitoIdentityPoolId: "",
+      accountId: "",
+      cognitoIdentityId: "",
+      caller: "",
+      apiKey: "",
+      sourceIp: "127.0.0.1",
+      cognitoAuthenticationType: "",
+      cognitoAuthenticationProvider: "",
+      userArn: "",
+      userAgent: "Mozilla/5.0",
+      user: "",
     },
-    "resourcePath": "/{proxy+}",
-    "httpMethod": "GET",
-    "apiId": "wt6mne2s9k"
+    resourcePath: "/{proxy+}",
+    httpMethod: "POST",
+    apiId: "foobar",
   },
-  "resource": "/{proxy+}",
-  "httpMethod": "POST",
-  "body": "{}",
-  "queryStringParameters": {
-    "foo": "bar"
+  resource: "/{proxy+}",
+  httpMethod: "POST",
+  body: '{"url":"http://localhost:8888/","method":"GET","timeout":"60000"}',
+  queryStringParameters: {
+    foo: "bar",
   },
-  "stageVariables": {
-    "foo": "bar"
-  }
+  stageVariables: {
+    foo: "bar",
+  },
 };
