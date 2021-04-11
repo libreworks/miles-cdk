@@ -25,6 +25,7 @@
     "aws-cdk": "1.94.1",
     "jest": "^26.4.2",
     "lambda-local": "^1.7.4",
+    "node-forge": "^0.10.0",
     "prettier": "2.2.1"
   },
   "dependencies": {
